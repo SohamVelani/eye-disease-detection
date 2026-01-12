@@ -14,16 +14,16 @@ This project utilizes **Deep Learning (CNNs & Transfer Learning)** to detect eye
 The model was trained using **Transfer Learning (EfficientNetB3/ResNet)** and achieved the following performance:
 
 ### Training Performance
-![Accuracy Graph](assets/accuracy_graph.png)
+![Accuracy Graph]
 <img width="1138" height="854" alt="image" src="https://github.com/user-attachments/assets/badc00a4-c6fe-4cc6-a536-ba9aa54e0131" />
 
 ### Confusion Matrix
-![Confusion Matrix](assets/confusion_matrix.png)
+![Confusion Matrix]
 <img width="904" height="896" alt="image" src="https://github.com/user-attachments/assets/7aa2c564-242b-4c9e-b370-293ff2263e20" />
 
 
 ### Sample Predictions
-![Predictions](assets/model_output.png)
+![Predictions]
 <img width="871" height="866" alt="image" src="https://github.com/user-attachments/assets/68bafe3c-bb17-43d9-9563-0cd15a42c0a1" />
 <img width="1039" height="443" alt="image" src="https://github.com/user-attachments/assets/0ba5d2b2-8b91-4d53-8fd3-f9e551500ebd" />
 <img width="1178" height="350" alt="image" src="https://github.com/user-attachments/assets/91e0708d-8951-4cc0-9df4-ac5975039fb0" />
