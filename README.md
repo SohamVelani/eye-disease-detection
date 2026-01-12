@@ -32,6 +32,7 @@ The model was trained using **Transfer Learning (EfficientNetB3/ResNet)** and ac
 1.  Clone the repository.
 2.  Install dependencies: `pip install -r requirements.txt`
 3.  Open the notebook in `notebooks/` to view the training process.
+4.  Or I have Uploaded the ipynb file, download that and run.
 
 ## 📚 References
 * Project Report: [Link to PDF if you upload it]
