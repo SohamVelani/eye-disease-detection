@@ -23,7 +23,6 @@ The model was trained using **Transfer Learning (EfficientNetB3/ResNet)** and ac
 
 
 ### Sample Predictions
-![Predictions]
 <img width="871" height="866" alt="image" src="https://github.com/user-attachments/assets/68bafe3c-bb17-43d9-9563-0cd15a42c0a1" />
 <img width="1039" height="443" alt="image" src="https://github.com/user-attachments/assets/0ba5d2b2-8b91-4d53-8fd3-f9e551500ebd" />
 <img width="1178" height="350" alt="image" src="https://github.com/user-attachments/assets/91e0708d-8951-4cc0-9df4-ac5975039fb0" />
