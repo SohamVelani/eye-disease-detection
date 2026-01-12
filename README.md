@@ -1,41 +1,39 @@
-# Eye Disease Detection & Prediction Using Machine Learning
+# Eye Disease Detection System 👁️
 
-## 📄 Abstract
-This project implements a deep learning framework for the early detection of eye diseases (Diabetic Retinopathy, Glaucoma, and Cataract) using Fundus and OCT images. [cite_start]The system utilizes **Convolutional Neural Networks (CNNs)** and **Transfer Learning** (EfficientNetB3, ResNet50, VGG16) to achieve high diagnostic precision[cite: 6, 7]. [cite_start]A key focus of this project is **Fairness-Aware Machine Learning**, incorporating techniques to reduce bias across different patient demographics[cite: 8].
+## 📄 Overview
+This project utilizes **Deep Learning (CNNs & Transfer Learning)** to detect eye diseases including Diabetic Retinopathy, Glaucoma, and Cataracts from fundus images. The project emphasizes **Fairness-Aware AI** to ensure consistent performance across different patient demographics.
 
-## 🚀 Key Features
-* **Multi-Disease Classification:** Detects Diabetic Retinopathy, Glaucoma, and Cataract.
-* [cite_start]**Transfer Learning:** Fine-tuned implementations of VGG16, ResNet50, and EfficientNetB3[cite: 172].
-* [cite_start]**Fairness Optimization:** Mitigates demographic bias (Age, Gender) using reweighting and threshold calibration[cite: 66].
-* [cite_start]**Explainable AI:** Includes Grad-CAM visualizations to show *where* the model is looking (e.g., optic disc, macula)[cite: 231].
 
-## 📊 Performance Results
-The models were evaluated on a balanced dataset of approx. [cite_start]2000 images per condition[cite: 95].
 
-| Model | Accuracy | Sensitivity | Specificity | AUC |
-| :--- | :--- | :--- | :--- | :--- |
-| **EfficientNetB3 (Transfer)** | **86%** | **0.85** | **0.87** | **0.91** |
-| ResNet50 (Transfer) | 85% | 0.83 | 0.86 | 0.89 |
-| VGG16 (Transfer) | 82% | 0.80 | 0.84 | 0.87 |
-| Baseline CNN | 75% | 0.68 | 0.78 | 0.80 |
-| Fairness-Aware Model | 80% | 0.79 | 0.81 | 0.85 |
-[cite_start]*(Source: Project Report Table I [cite: 192])*
+## 📂 Project Structure
+* `notebooks/`: Contains the full project code and execution logs (`MLA_Project.html`).
+* `assets/`: Visual results and performance graphs.
+* `src/`: Source code for the model architecture.
 
-## 🛠️ Methodology
-1.  [cite_start]**Preprocessing:** CLAHE contrast enhancement, normalization, and geometric augmentation (rotation, zoom, flip) [cite: 157-160].
-2.  **Architecture:**
-    * [cite_start]**Custom CNN:** 4 Convolutional blocks with increasing filters (32-256) and Batch Normalization[cite: 130].
-    * [cite_start]**Transfer Learning:** Feature extraction using ImageNet weights, fine-tuned on ocular data[cite: 49].
-3.  [cite_start]**Fairness:** Adversarial debiasing and group-aware sampling to ensure equitable performance across age and gender groups[cite: 112].
+## 📊 Key Results
+The model was trained using **Transfer Learning (EfficientNetB3/ResNet)** and achieved the following performance:
 
-## 🖼️ Visuals
-### Model Architecture
-![Architecture](assets/architecture.png)
-[cite_start]*Figure 1: Custom CNN Architecture illustrating hierarchical feature extraction[cite: 219].*
+### Training Performance
+![Accuracy Graph](assets/accuracy_graph.png)
+<img width="1138" height="854" alt="image" src="https://github.com/user-attachments/assets/badc00a4-c6fe-4cc6-a536-ba9aa54e0131" />
 
-### Grad-CAM Output
-![Grad-CAM](assets/output_sample.png)
-[cite_start]*Figure 5: Grad-CAM visualization highlighting the optic disc and macula as key regions for diagnosis[cite: 231].*
+### Confusion Matrix
+![Confusion Matrix](assets/confusion_matrix.png)
+<img width="904" height="896" alt="image" src="https://github.com/user-attachments/assets/7aa2c564-242b-4c9e-b370-293ff2263e20" />
+
+
+### Sample Predictions
+![Predictions](assets/model_output.png)
+<img width="871" height="866" alt="image" src="https://github.com/user-attachments/assets/68bafe3c-bb17-43d9-9563-0cd15a42c0a1" />
+<img width="1039" height="443" alt="image" src="https://github.com/user-attachments/assets/0ba5d2b2-8b91-4d53-8fd3-f9e551500ebd" />
+<img width="1178" height="350" alt="image" src="https://github.com/user-attachments/assets/91e0708d-8951-4cc0-9df4-ac5975039fb0" />
+
+
+## 🛠️ How to Run
+1.  Clone the repository.
+2.  Install dependencies: `pip install -r requirements.txt`
+3.  Open the notebook in `notebooks/` to view the training process.
 
 ## 📚 References
-[cite_start]Based on the project report "Eye Diseases Detection and Prediction Using Machine Learning" by S. Velani, N. Sutaria, and A. Satra[cite: 1].
+* Project Report: [Link to PDF if you upload it]
+* Dataset: [Link to Kaggle dataset if applicable]
